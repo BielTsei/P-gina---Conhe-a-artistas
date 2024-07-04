@@ -151,3 +151,22 @@ button a {
   color: #ff4a1c;
   font-size: 22px;
 }
+audio::-webkit-media-controls-play-button {
+  background-color: #ff491cad;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #360046;
+  font-weight: 600;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #360046;
+  font-weight: 600;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #ff491cad;
+  border-radius: 50%;
+}
