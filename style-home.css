@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  color: #e9d2f4;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(./assets/background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background 0.4s ease-in;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#title {
+  color: #e9d2f4;
+  margin-bottom: 86px;
+  font-size: 2em;
+}
+
+#btn-pag {
+  width: 260px;
+  height: 60px;
+  background-color: #e9d2f4;
+  border: none;
+  border-radius: 32px;
+}
+
+button a {
+  color: #ff4a1c;
+  font-size: 24px;
+}
+
+.container h1 {
+  padding-bottom: 28px;
+}
+
+#card1 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/blackpink2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-top: 12px;
+}
+
+#musica {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+
+#card2 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/taylor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#card3 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/adele.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#card4 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/ariana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#card5 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/itzy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#title-imaginedragon {
+  font-size: 28px;
+}
+
+#card6 {
+  padding-top: 41px;
+  padding-left: 26px;
+  padding-right: 26px;
+  width: 280px;
+  height: 500px;
+  background-image: url(./assets/imagine-dragons.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.cards {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 280px;
+  height: 500px;
+  display: flex;
+  transform-style: preserve-3d;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-6,
+#item-6:checked ~ .cards #song-1 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
